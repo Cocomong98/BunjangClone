@@ -1,12 +1,130 @@
 <head>
     <meta charset="UTF-8">
-    <title>JQuery_Ajax_연습</title>
+    <style>
+        #locations {
+            display: flex; 
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 0 auto;
+            gap: 20px;
+        }
+        
+
+        #loca_detail { 
+            padding: 10px 15px 10px 15px; /* TRBL 순서로 적용 */
+            margin-right: 10px;
+            margin-left: 10px;
+            border: 1px solid green;
+            width: 150px;
+        }
+          
+    </style>
+    <title>지역별 안심택배보관함 조회하기</title>
 </head>
 
 <body>
-    <h1>원하는 지역을 고르세요</h1>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Navbar</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
+    <h1>원하는 지역을 선택하세요</h1>
+
+
+    <h3>특별시, 광역시</h3>
     <hr />
 
+    <div id="locations">
+        <div id="loca_detail">
+            <h2>서울</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
     
+        <div id="loca_detail">
+            <h2>부산</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+    
+        <div id="loca_detail">
+            <h2>대구</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>인천</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>광주</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>대전</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>울산</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+    </div>
+
+    <h3>도</h3>
+    <hr />
+
+    <div id="locations">
+        <div id="loca_detail">
+            <h2>경기도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+    
+        <div id="loca_detail">
+            <h2>강원도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+    
+        <div id="loca_detail">
+            <h2>충청북도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>충청남도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>전라북도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>전라남도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>경상북도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>경상남도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+
+        <div id="loca_detail">
+            <h2>제주특별자치도</h2>
+            <button class="login" onclick="window.open('seoulBox.html')">조회</button>
+        </div>
+    </div>
+
+
 </body>
