@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>JQuery_Ajax_연습</title>
+    <title>서울시 택배보관함</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -72,11 +72,11 @@
                 type: "GET",
                 url: "http://openapi.seoul.go.kr:8088/sample/xml/safeOpenBox/1/5/",
                 data: {},
-                dataType: "xml", // 데이터 형식을 XML로 지정
+                dataType: "xml", // XML 파일 형식으로 받아온다는 뜻
                 success: function(response) {
                     $("#names-q1").empty()
 
-                    // XML 데이터 파싱
+                    // XML 데이터 사용 ( JSON과는 다름 )
                     let box_list = $(response).find("row");
                     box_list.each(function() {
                         let name_stat = $(this).find("ANSIMINM").text();
